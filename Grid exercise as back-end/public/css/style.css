@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu+2:400,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
+html {
+    background-image: url('./bady-qb-hxi_yRxODNc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font: 16px 'Baloo Tammudu 2', cursive;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 2em auto;
+    border-radius: 4em;
+    position: relative;
+}
+
+table th, table td {
+    border: 2px solid #cecece;
+    padding: 0.2em;
+    background: rgba(187, 182, 182, 0.897);
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    overflow-wrap: break-word;
+}
+
+table tr:hover td {
+    background: rgba(187, 182, 182, 0.952);
+    color: white;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+tbody {
+    display: block;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+thead {
+    width: calc(100%-16px);
+}
+
+table {
+    width: 90%;
+}
+
+a {
+    overflow-wrap: break-word;
+}
+
+th:hover {
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+.sort:hover, .filter:hover, .del:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: grey;
+}
+
+.filter::after {
+    display: inline-block;
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 0.6em;
+    font-weight: 900;
+    content: "\f0b0";
+    size: 2em;
+    margin-left: 1em;
+    color: rgb(5, 5, 5);
+}
+
+.sort::after {
+    display: inline-block;
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 0.6em;
+    content: "\f0dc";
+    margin-left: 1em;
+    color: rgb(5, 5, 5);
+}
+
+.delete::before {
+    display: inline-block;
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 0.6em;
+    content: "\f2ed";
+    margin-left: 1em;
+    margin-right: 2em;
+    color: rgb(5, 5, 5);
+}
